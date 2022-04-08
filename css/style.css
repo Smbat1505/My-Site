@@ -716,6 +716,10 @@ body._computer .menu__list > li:hover .menu__sub-list {
   pointer-events: all;
 }
 
+body._computer .menu__arrow {
+  display: none;
+}
+
 body._touch .social__container-mobile {
   display: none;
 }
@@ -779,6 +783,7 @@ body .menu__list > li._active .menu__sub-list {
 }
 
 body .menu__list > li._active .menu__arrow {
+  display: block;
   border-top: 16px solid #d11919;
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
@@ -950,7 +955,8 @@ body._lock {
   }
 
   .menu__body._active {
-    padding-top: 100px;
+    padding: 100px 15px 10px 15px;
+    width: 360px;
     top: 0;
   }
 
